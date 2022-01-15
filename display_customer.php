@@ -25,10 +25,11 @@ $rws_min=  mysql_fetch_array($result_min);
 
         </style>
         <title>Edit Customer Details</title>
+            
     </head>
     <?php include 'header.php'?>
         
-                <div class="displaystaff_content">
+                <div class="displaystaff_content  ">
                     <?php include 'admin_navbar.php'?>
                 <form action="editcustomer.php" method="POST">
             
@@ -41,7 +42,7 @@ $rws_min=  mysql_fetch_array($result_min);
                         <th>account type</th>
                         <th>address</th>
                         <th>mobile</th>
-                        <th>email</th>
+                        <th>e-mail</th>
                         <?php
                         while($rws=  mysql_fetch_array($result)){
                             echo "<tr><td><input type='radio' name='customer_id' value=".$rws[0];
