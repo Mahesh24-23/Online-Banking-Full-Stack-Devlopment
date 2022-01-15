@@ -12,11 +12,13 @@ $result=  mysql_query($sql) or die(mysql_error());
 $sql_min="SELECT MIN(id) from customer";
 $result_min=  mysql_query($sql_min);
 $rws_min=  mysql_fetch_array($result_min);
+
 ?>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="newcss.css"/>
         <style>
+                
             .displaystaff_content table,th,td {
     padding:6px;
     border: 1px solid #2E4372;
